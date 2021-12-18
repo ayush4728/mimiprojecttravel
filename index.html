@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Travels</title>
+  </head>
+  <body>
+    <!-- Video Source -->
+    <!-- https://www.pexels.com/video/aerial-view-of-beautiful-resort-2169880/ -->
+    <section class="showcase">
+      <header>
+        <h2 class="logo">Travel</h2>
+        <div class="toggle"></div>
+      </header>
+      <video src="video.mp4" muted loop autoplay></video>
+      <div class="overlay"></div>
+      <div class="text">
+        <h2>Never Stop To</h2>
+        <h3>Exploring The World</h3>
+        <p>
+          Reasons for traveling include recreation, holidays, tourism or
+          vacationing, research travel, the gathering of information, visiting
+          people, volunteer travel for charity, migration to begin life
+          somewhere else, religious pilgrimages and mission trips, business
+          travel, trade, commuting, and other reasons, such as to obtain health
+          care or waging or fleeing war or for the enjoyment of traveling.
+          Travelers may use human-powered transport such as walking or
+          bicycling; or vehicles, such as public transport, automobiles, trains,
+          ferries, boats, cruise ships and airplanes.
+        </p>
+        <a href="http://www.travelexplorer.in/" target="_blank">Explore</a>
+      </div>
+      <ul class="social">
+        <li>
+          <a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png" /></a>
+        </li>
+      </ul>
+    </section>
+    <div class="menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Destination</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <script>
+      const menuToggle = document.querySelector(".toggle");
+      const showcase = document.querySelector(".showcase");
+
+      menuToggle.addEventListener("click", () => {
+        menuToggle.classList.toggle("active");
+        showcase.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
